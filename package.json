@@ -14,7 +14,8 @@
         "lint:report": "eslint --ext .js,.ts,.vue --ignore-path .eslintignore . --fix -f html-extended -o eslint-report.html",
         "lint:fix": "eslint --ext .js,.ts,.vue --ignore-path .eslintignore . --fix",
         "test": "cross-env NODE_ENV=test jest",
-        "test:coverage": "cross-env NODE_ENV=test jest --coverage"
+        "test:coverage": "cross-env NODE_ENV=test jest --coverage",
+        "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
     },
     "dependencies": {
         "intersection-observer": "^0.12.0",
